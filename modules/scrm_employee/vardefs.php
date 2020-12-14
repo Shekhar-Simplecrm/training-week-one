@@ -54,5 +54,3 @@ if (!class_exists('VardefManager')) {
         require_once('include/SugarObjects/VardefManager.php');
 }
 VardefManager::createVardef('scrm_employee', 'scrm_employee', array('basic','assignable','security_groups','person'));
-
-?>
