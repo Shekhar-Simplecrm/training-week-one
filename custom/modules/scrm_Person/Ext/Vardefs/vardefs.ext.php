@@ -26,4 +26,20 @@ $dictionary['scrm_Person']['fields']['date_of_birth_c']['inline_edit']='';
 $dictionary['scrm_Person']['fields']['date_of_birth_c']['labelValue']='Date of Birth';
 
  
+
+ // created: 2020-12-14 10:38:48
+$dictionary['scrm_Person']['fields']['email1']['required']=true;
+$dictionary['scrm_Person']['fields']['email1']['inline_edit']=true;
+$dictionary['scrm_Person']['fields']['email1']['merge_filter']='disabled';
+
+ 
+
+ // created: 2020-12-14 10:38:32
+$dictionary['scrm_Person']['fields']['first_name']['required']=true;
+$dictionary['scrm_Person']['fields']['first_name']['inline_edit']=true;
+$dictionary['scrm_Person']['fields']['first_name']['comments']='First name of the contact';
+$dictionary['scrm_Person']['fields']['first_name']['merge_filter']='disabled';
+$dictionary['scrm_Person']['fields']['first_name']['unified_search']=false;
+
+ 
 ?>
