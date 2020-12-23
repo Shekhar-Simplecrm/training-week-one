@@ -2,49 +2,40 @@
 $module_name = 'scrm_employee';
 $listViewDefs [$module_name] = 
 array (
-  'NAME' => 
+  'EMPLOYEE_ID' => 
   array (
-    'width' => '20%',
-    'label' => 'LBL_NAME',
-    'link' => true,
-    'orderBy' => 'last_name',
+    'type' => 'varchar',
+    'label' => 'LBL_EMPLOYEE_ID',
+    'width' => '10%',
     'default' => true,
-    'related_fields' => 
-    array (
-      0 => 'first_name',
-      1 => 'last_name',
-      2 => 'salutation',
-    ),
+    'link' => true,
+  ),
+  'FIRST_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_FIRST_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'LAST_NAME' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_LAST_NAME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DESIGNATION_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_DESIGNATION',
+    'width' => '10%',
   ),
   'DATE_OF_BIRTH_C' => 
   array (
     'type' => 'date',
     'default' => true,
     'label' => 'LBL_DATE_OF_BIRTH',
-    'width' => '10%',
-  ),
-  'AGE_C' => 
-  array (
-    'type' => 'int',
-    'default' => true,
-    'label' => 'LBL_AGE',
-    'width' => '10%',
-  ),
-  'EMAIL1' => 
-  array (
-    'width' => '15%',
-    'label' => 'LBL_EMAIL_ADDRESS',
-    'sortable' => false,
-    'link' => true,
-    'customCode' => '{$EMAIL1_LINK}',
-    'default' => true,
-  ),
-  'STATUS_C' => 
-  array (
-    'type' => 'enum',
-    'default' => true,
-    'studio' => 'visible',
-    'label' => 'LBL_STATUS',
     'width' => '10%',
   ),
   'DO_NOT_CALL' => 
@@ -59,6 +50,32 @@ array (
     'label' => 'LBL_HOME_PHONE',
     'default' => false,
   ),
+  'PHONE_MOBILE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_MOBILE_PHONE',
+    'default' => false,
+  ),
+  'PHONE_OTHER' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_WORK_PHONE',
+    'default' => false,
+  ),
+  'NAME' => 
+  array (
+    'width' => '20%',
+    'label' => 'LBL_NAME',
+    'link' => true,
+    'orderBy' => 'last_name',
+    'default' => false,
+    'related_fields' => 
+    array (
+      0 => 'first_name',
+      1 => 'last_name',
+      2 => 'salutation',
+    ),
+  ),
   'TITLE' => 
   array (
     'width' => '15%',
@@ -71,16 +88,13 @@ array (
     'label' => 'LBL_OFFICE_PHONE',
     'default' => false,
   ),
-  'PHONE_MOBILE' => 
+  'EMAIL1' => 
   array (
-    'width' => '10%',
-    'label' => 'LBL_MOBILE_PHONE',
-    'default' => false,
-  ),
-  'PHONE_OTHER' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_WORK_PHONE',
+    'width' => '15%',
+    'label' => 'LBL_EMAIL_ADDRESS',
+    'sortable' => false,
+    'link' => true,
+    'customCode' => '{$EMAIL1_LINK}',
     'default' => false,
   ),
   'PHONE_FAX' => 

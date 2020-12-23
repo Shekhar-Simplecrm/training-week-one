@@ -1,5 +1,5 @@
 <?php
-$module_name = 'scrm_TestQualification';
+$module_name = 'scrm_Qualification';
 $viewdefs [$module_name] = 
 array (
   'QuickCreate' => 
@@ -38,12 +38,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'degree_c',
+            'name' => 'degree',
             'label' => 'LBL_DEGREE',
           ),
           1 => 
           array (
-            'name' => 'subject_c',
+            'name' => 'subject',
             'label' => 'LBL_SUBJECT',
           ),
         ),
@@ -51,12 +51,12 @@ array (
         array (
           0 => 
           array (
-            'name' => 'university_c',
+            'name' => 'university',
             'label' => 'LBL_UNIVERSITY',
           ),
           1 => 
           array (
-            'name' => 'year_c',
+            'name' => 'year',
             'label' => 'LBL_YEAR',
           ),
         ),

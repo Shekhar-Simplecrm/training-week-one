@@ -6,6 +6,13 @@ array (
   array (
     'templateMeta' => 
     array (
+      'form' => 
+      array (
+        'hidden' => 
+        array (
+          0 => '<input type="hidden" name="employee_id" value="{$fields.employee_id.value}">',
+        ),
+      ),
       'maxColumns' => '2',
       'widths' => 
       array (
@@ -33,12 +40,13 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_EDITVIEW_PANEL1' => 
+        'LBL_ADDRESS_INFORMATION' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -60,7 +68,11 @@ array (
         ),
         1 => 
         array (
-          0 => 'department',
+          0 => 
+          array (
+            'name' => 'designation_c',
+            'label' => 'LBL_DESIGNATION',
+          ),
           1 => 
           array (
             'name' => 'date_of_birth_c',
@@ -71,41 +83,49 @@ array (
         array (
           0 => 
           array (
+            'name' => 'date_of_joining_c',
+            'label' => 'LBL_DATE_OF_JOINING',
+          ),
+          1 => 
+          array (
             'name' => 'status_c',
             'studio' => 'visible',
             'label' => 'LBL_STATUS',
           ),
-          1 => 
+        ),
+        3 => 
+        array (
+          0 => 
           array (
-            'name' => 'joined_date_c',
-            'label' => 'LBL_JOINED_DATE',
+            'name' => 'terminated_date_c',
+            'label' => 'LBL_TERMINATED_DATE',
           ),
+          1 => '',
         ),
       ),
       'lbl_email_addresses' => 
       array (
         0 => 
         array (
-          0 => array(
+          0 => 'email1',
+          1 => array(
             'name' => 'phone_mobile',
             'customCode' => '<div class="form-row">
-                              <div class="col-2">
-                                <button type="button" class="btn btn-sm btn-danger phone-mobile-add-button custom-btn" title="Add Mobile Phone " id="scrm_employee0_phone_mobile_widget_add">
-                                <span class="fas fa-plus"></span><span></span>
-                                </button>
-                              </div>
-                              <div class="col-10">
-                                <div class="default-field">
-                                  <input name="phone_mobile[]"  id="phone_mobile" class="form-control" size="25" maxlength="25" type="text" value="{$fields.phone_mobile.value}">
-                                  </div>
-                                  <div class="new-row"> </div>
-                              </div>
-                            </div>',
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-sm btn-danger phone-mobile-add-button custom-btn" title="Add Mobile Phone " onclick="addNewRow()" id="scrm_employee0_phone_mobile_widget_add">
+                                        <span class="fas fa-plus"></span><span></span>
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" name="phone_mobile" id="phone_mobile" value="{$fields.phone_mobile.value}">
+                                    <div class="new-row"> </div>
+                                </div>
+                            </div>'
           ),
-          1 => 'email1',
+
         ),
       ),
-      'lbl_editview_panel1' => 
+      'lbl_address_information' => 
       array (
         0 => 
         array (
@@ -115,29 +135,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_ADDRESS_LINE_1',
           ),
-          1 => 
-          array (
-            'name' => 'address_line_2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_2',
-          ),
         ),
         1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_line_3_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_3',
-          ),
-          1 => 
-          array (
-            'name' => 'primary_address_postalcode',
-            'comment' => 'Postal code for primary address',
-            'label' => 'LBL_PRIMARY_ADDRESS_POSTALCODE',
-          ),
-        ),
-        2 => 
         array (
           0 => 
           array (
@@ -145,20 +144,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_COUNTRY',
           ),
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'state_c',
             'studio' => 'visible',
             'label' => 'LBL_STATE',
-          ),
-          1 => 
-          array (
-            'name' => 'city_c',
-            'studio' => 'visible',
-            'label' => 'LBL_CITY',
           ),
         ),
       ),

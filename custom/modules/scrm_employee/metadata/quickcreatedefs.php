@@ -33,7 +33,7 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_EDITVIEW_PANEL1' => 
+        'LBL_ADDRESS_INFORMATION' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
@@ -69,83 +69,30 @@ array (
             'label' => 'LBL_DATE_OF_BIRTH',
           ),
         ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'status_c',
-            'studio' => 'visible',
-            'label' => 'LBL_STATUS',
-          ),
-          1 => 
-          array (
-            'name' => 'joined_date_c',
-            'label' => 'LBL_JOINED_DATE',
-          ),
-        ),
       ),
       'lbl_email_addresses' => 
       array (
         0 => 
         array (
-          0 => 'phone_mobile',
-          1 => 'email1',
+          0 => 'email1',
+          1 => 'phone_mobile',
         ),
       ),
-      'lbl_editview_panel1' => 
+      'lbl_address_information' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            'name' => 'address_line_1_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_1',
+            'name' => 'primary_address_street',
+            'comment' => 'Street address for primary address',
+            'label' => 'LBL_PRIMARY_ADDRESS_STREET',
           ),
           1 => 
           array (
-            'name' => 'address_line_2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_2',
-          ),
-        ),
-        1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_line_3_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_3',
-          ),
-          1 => 
-          array (
-            'name' => 'primary_address_postalcode',
-            'comment' => 'Postal code for primary address',
-            'label' => 'LBL_PRIMARY_ADDRESS_POSTALCODE',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 
-          array (
-            'name' => 'country_c',
-            'studio' => 'visible',
-            'label' => 'LBL_COUNTRY',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'state_c',
-            'studio' => 'visible',
-            'label' => 'LBL_STATE',
-          ),
-          1 => 
-          array (
-            'name' => 'city_c',
-            'studio' => 'visible',
-            'label' => 'LBL_CITY',
+            'name' => 'alt_address_street',
+            'comment' => 'Street address for alternate address',
+            'label' => 'LBL_ALT_ADDRESS_STREET',
           ),
         ),
       ),

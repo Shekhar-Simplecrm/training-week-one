@@ -2,15 +2,15 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2020-12-10 10:05:07
-$layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_accounts_1'] = array (
+ // created: 2020-12-16 10:42:41
+$layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_scrm_qualification_1'] = array (
   'order' => 100,
-  'module' => 'Accounts',
+  'module' => 'scrm_Qualification',
   'subpanel_name' => 'default',
   'sort_order' => 'asc',
   'sort_by' => 'id',
-  'title_key' => 'LBL_SCRM_EMPLOYEE_ACCOUNTS_1_FROM_ACCOUNTS_TITLE',
-  'get_subpanel_data' => 'scrm_employee_accounts_1',
+  'title_key' => 'LBL_SCRM_EMPLOYEE_SCRM_QUALIFICATION_1_FROM_SCRM_QUALIFICATION_TITLE',
+  'get_subpanel_data' => 'scrm_employee_scrm_qualification_1',
   'top_buttons' => 
   array (
     0 => 
@@ -26,15 +26,15 @@ $layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_accounts_1'] = ar
 );
 
 
- // created: 2020-12-10 09:54:31
-$layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_qua_qualificationmodule_1'] = array (
+ // created: 2020-12-17 08:00:14
+$layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_scrm_work_experience_1'] = array (
   'order' => 100,
-  'module' => 'qua_QualificationModule',
+  'module' => 'scrm_work_experience',
   'subpanel_name' => 'default',
   'sort_order' => 'asc',
   'sort_by' => 'id',
-  'title_key' => 'LBL_SCRM_EMPLOYEE_QUA_QUALIFICATIONMODULE_1_FROM_QUA_QUALIFICATIONMODULE_TITLE',
-  'get_subpanel_data' => 'scrm_employee_qua_qualificationmodule_1',
+  'title_key' => 'LBL_SCRM_EMPLOYEE_SCRM_WORK_EXPERIENCE_1_FROM_SCRM_WORK_EXPERIENCE_TITLE',
+  'get_subpanel_data' => 'scrm_employee_scrm_work_experience_1',
   'top_buttons' => 
   array (
     0 => 
@@ -51,10 +51,10 @@ $layout_defs["scrm_employee"]["subpanel_setup"]['scrm_employee_qua_qualification
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['scrm_employee']['subpanel_setup']['scrm_employee_accounts_1']['override_subpanel_name'] = 'scrm_employee_subpanel_scrm_employee_accounts_1';
+$layout_defs['scrm_employee']['subpanel_setup']['scrm_employee_scrm_qualification_1']['override_subpanel_name'] = 'scrm_employee_subpanel_scrm_employee_scrm_qualification_1';
 
 
 //auto-generated file DO NOT EDIT
-$layout_defs['scrm_employee']['subpanel_setup']['scrm_employee_qua_qualificationmodule_1']['override_subpanel_name'] = 'scrm_employee_subpanel_scrm_employee_qua_qualificationmodule_1';
+$layout_defs['scrm_employee']['subpanel_setup']['scrm_employee_scrm_work_experience_1']['override_subpanel_name'] = 'scrm_employee_subpanel_scrm_employee_scrm_work_experience_1';
 
 ?>

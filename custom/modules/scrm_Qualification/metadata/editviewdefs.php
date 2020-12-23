@@ -1,5 +1,5 @@
 <?php
-$module_name = 'scrm_TestQualification';
+$module_name = 'scrm_Qualification';
 $viewdefs [$module_name] = 
 array (
   'EditView' => 

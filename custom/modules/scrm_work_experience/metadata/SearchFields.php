@@ -1,40 +1,81 @@
 <?php
-// created: 2020-12-22 07:35:09
-$searchFields['scrm_employee'] = array (
-  'first_name' => 
+// created: 2020-12-17 07:47:39
+$searchFields['scrm_work_experience'] = array (
+  'name' => 
   array (
     'query_type' => 'default',
   ),
-  'last_name' => 
+  'account_type' => 
+  array (
+    'query_type' => 'default',
+    'options' => 'account_type_dom',
+    'template_var' => 'ACCOUNT_TYPE_OPTIONS',
+  ),
+  'industry' => 
+  array (
+    'query_type' => 'default',
+    'options' => 'industry_dom',
+    'template_var' => 'INDUSTRY_OPTIONS',
+  ),
+  'annual_revenue' => 
   array (
     'query_type' => 'default',
   ),
-  'search_name' => 
+  'address_street' => 
   array (
     'query_type' => 'default',
     'db_field' => 
     array (
-      0 => 'first_name',
-      1 => 'last_name',
+      0 => 'billing_address_street',
+      1 => 'shipping_address_street',
     ),
-    'force_unifiedsearch' => true,
   ),
-  'do_not_call' => 
+  'address_city' => 
   array (
     'query_type' => 'default',
-    'input_type' => 'checkbox',
-    'operator' => '=',
+    'db_field' => 
+    array (
+      0 => 'billing_address_city',
+      1 => 'shipping_address_city',
+    ),
+  ),
+  'address_state' => 
+  array (
+    'query_type' => 'default',
+    'db_field' => 
+    array (
+      0 => 'billing_address_state',
+      1 => 'shipping_address_state',
+    ),
+  ),
+  'address_postalcode' => 
+  array (
+    'query_type' => 'default',
+    'db_field' => 
+    array (
+      0 => 'billing_address_postalcode',
+      1 => 'shipping_address_postalcode',
+    ),
+  ),
+  'address_country' => 
+  array (
+    'query_type' => 'default',
+    'db_field' => 
+    array (
+      0 => 'billing_address_country',
+      1 => 'shipping_address_country',
+    ),
+  ),
+  'rating' => 
+  array (
+    'query_type' => 'default',
   ),
   'phone' => 
   array (
     'query_type' => 'default',
     'db_field' => 
     array (
-      0 => 'phone_mobile',
-      1 => 'phone_work',
-      2 => 'phone_other',
-      3 => 'phone_fax',
-      4 => 'assistant_phone',
+      0 => 'phone_office',
     ),
   ),
   'email' => 
@@ -48,50 +89,21 @@ $searchFields['scrm_employee'] = array (
     ),
     'vname' => 'LBL_ANY_EMAIL',
   ),
-  'address_street' => 
+  'website' => 
   array (
     'query_type' => 'default',
-    'db_field' => 
-    array (
-      0 => 'primary_address_street',
-      1 => 'alt_address_street',
-    ),
   ),
-  'address_city' => 
+  'ownership' => 
   array (
     'query_type' => 'default',
-    'db_field' => 
-    array (
-      0 => 'primary_address_city',
-      1 => 'alt_address_city',
-    ),
   ),
-  'address_state' => 
+  'employees' => 
   array (
     'query_type' => 'default',
-    'db_field' => 
-    array (
-      0 => 'primary_address_state',
-      1 => 'alt_address_state',
-    ),
   ),
-  'address_postalcode' => 
+  'ticker_symbol' => 
   array (
     'query_type' => 'default',
-    'db_field' => 
-    array (
-      0 => 'primary_address_postalcode',
-      1 => 'alt_address_postalcode',
-    ),
-  ),
-  'address_country' => 
-  array (
-    'query_type' => 'default',
-    'db_field' => 
-    array (
-      0 => 'primary_address_country',
-      1 => 'alt_address_country',
-    ),
   ),
   'current_user_only' => 
   array (
@@ -103,6 +115,10 @@ $searchFields['scrm_employee'] = array (
     'my_items' => true,
     'vname' => 'LBL_CURRENT_USER_FILTER',
     'type' => 'bool',
+  ),
+  'assigned_user_id' => 
+  array (
+    'query_type' => 'default',
   ),
   'range_date_entered' => 
   array (

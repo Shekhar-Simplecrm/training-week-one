@@ -1,39 +1,39 @@
 <?php
-// created: 2020-12-14 06:28:48
+// created: 2020-12-16 10:49:48
 $subpanel_layout['list_fields'] = array (
-  'degree_c' => 
+  'degree' => 
   array (
     'type' => 'varchar',
-    'default' => true,
     'vname' => 'LBL_DEGREE',
-    'width' => '10%',
+    'width' => '30%',
+    'default' => true,
   ),
-  'subject_c' => 
+  'subject' => 
   array (
     'type' => 'varchar',
-    'default' => true,
     'vname' => 'LBL_SUBJECT',
-    'width' => '10%',
+    'width' => '30%',
+    'default' => true,
   ),
-  'university_c' => 
+  'university' => 
   array (
     'type' => 'varchar',
-    'default' => true,
     'vname' => 'LBL_UNIVERSITY',
-    'width' => '10%',
+    'width' => '30%',
+    'default' => true,
   ),
-  'year_c' => 
+  'year' => 
   array (
     'type' => 'int',
-    'default' => true,
     'vname' => 'LBL_YEAR',
     'width' => '10%',
+    'default' => true,
   ),
   'edit_button' => 
   array (
     'vname' => 'LBL_EDIT_BUTTON',
     'widget_class' => 'SubPanelEditButton',
-    'module' => 'scrm_TestQualification',
+    'module' => 'scrm_Qualification',
     'width' => '4%',
     'default' => true,
   ),
@@ -41,7 +41,7 @@ $subpanel_layout['list_fields'] = array (
   array (
     'vname' => 'LBL_REMOVE',
     'widget_class' => 'SubPanelRemoveButton',
-    'module' => 'scrm_TestQualification',
+    'module' => 'scrm_Qualification',
     'width' => '5%',
     'default' => true,
   ),

@@ -1,5 +1,5 @@
 <?php
-$module_name = 'scrm_TestQualification';
+$module_name = 'scrm_Qualification';
 $viewdefs [$module_name] = 
 array (
   'DetailView' => 
@@ -30,6 +30,15 @@ array (
           'field' => '30',
         ),
       ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
     ),
     'panels' => 
     array (
@@ -37,27 +46,24 @@ array (
       array (
         0 => 
         array (
-          0 => 'name',
-          1 => 'assigned_user_name',
+          0 => 
+          array (
+            'name' => 'degree',
+            'label' => 'LBL_DEGREE',
+          ),
+          1 => 
+          array (
+            'name' => 'subject',
+            'label' => 'LBL_SUBJECT',
+          ),
         ),
         1 => 
         array (
           0 => 
           array (
-            'name' => 'date_entered',
-            'customCode' => '{$fields.date_entered.value} {$APP.LBL_BY} {$fields.created_by_name.value}',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'university',
+            'label' => 'LBL_UNIVERSITY',
           ),
-          1 => 
-          array (
-            'name' => 'date_modified',
-            'customCode' => '{$fields.date_modified.value} {$APP.LBL_BY} {$fields.modified_by_name.value}',
-            'label' => 'LBL_DATE_MODIFIED',
-          ),
-        ),
-        2 => 
-        array (
-          0 => 'description',
         ),
       ),
     ),

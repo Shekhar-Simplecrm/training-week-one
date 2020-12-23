@@ -43,12 +43,13 @@ array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
-        'LBL_EDITVIEW_PANEL1' => 
+        'LBL_ADDRESS_INFORMATION' => 
         array (
           'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -71,7 +72,11 @@ array (
         ),
         1 => 
         array (
-          0 => 'department',
+          0 => 
+          array (
+            'name' => 'designation_c',
+            'label' => 'LBL_DESIGNATION',
+          ),
           1 => 
           array (
             'name' => 'date_of_birth_c',
@@ -82,22 +87,22 @@ array (
         array (
           0 => 
           array (
-            'name' => 'status_c',
-            'studio' => 'visible',
-            'label' => 'LBL_STATUS',
+            'name' => 'date_of_joining_c',
+            'label' => 'LBL_DATE_OF_JOINING',
           ),
           1 => 
           array (
-            'name' => 'joined_date_c',
-            'label' => 'LBL_JOINED_DATE',
+            'name' => 'status_c',
+            'studio' => 'visible',
+            'label' => 'LBL_STATUS',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
-            'name' => 'age_c',
-            'label' => 'LBL_AGE',
+            'name' => 'terminated_date_c',
+            'label' => 'LBL_TERMINATED_DATE',
           ),
           1 => '',
         ),
@@ -106,14 +111,14 @@ array (
       array (
         0 => 
         array (
-          0 => 
+          0 => 'email1',
+          1 => 
           array (
             'name' => 'phone_mobile',
           ),
-          1 => 'email1',
         ),
       ),
-      'lbl_editview_panel1' => 
+      'lbl_address_information' => 
       array (
         0 => 
         array (
@@ -123,29 +128,8 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_ADDRESS_LINE_1',
           ),
-          1 => 
-          array (
-            'name' => 'address_line_2_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_2',
-          ),
         ),
         1 => 
-        array (
-          0 => 
-          array (
-            'name' => 'address_line_3_c',
-            'studio' => 'visible',
-            'label' => 'LBL_ADDRESS_LINE_3',
-          ),
-          1 => 
-          array (
-            'name' => 'primary_address_postalcode',
-            'comment' => 'Postal code for primary address',
-            'label' => 'LBL_PRIMARY_ADDRESS_POSTALCODE',
-          ),
-        ),
-        2 => 
         array (
           0 => 
           array (
@@ -153,20 +137,11 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_COUNTRY',
           ),
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
             'name' => 'state_c',
             'studio' => 'visible',
             'label' => 'LBL_STATE',
-          ),
-          1 => 
-          array (
-            'name' => 'city_c',
-            'studio' => 'visible',
-            'label' => 'LBL_CITY',
           ),
         ),
       ),
