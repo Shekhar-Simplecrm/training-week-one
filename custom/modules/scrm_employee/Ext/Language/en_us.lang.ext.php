@@ -15,7 +15,7 @@ $mod_strings['LBL_SCRM_EMPLOYEE_SCRM_QUALIFICATION_1_FROM_SCRM_QUALIFICATION_TIT
 $mod_strings['LBL_SCRM_EMPLOYEE_SCRM_WORK_EXPERIENCE_1_FROM_SCRM_WORK_EXPERIENCE_TITLE'] = 'Work Experience';
 
 
-// created: 2020-12-23 09:31:07
+// created: 2020-12-23 13:48:14
 $mod_strings = array (
   'LBL_DATE_OF_BIRTH' => 'Date of Birth',
   'LBL_AGE' => 'Age',
@@ -46,5 +46,7 @@ $mod_strings = array (
   'LBL_ORGANIZATION_NAME' => 'Organization Name',
   'LBL_ORG_NAME_ACCOUNT_ID' => 'org name (related Organization ID)',
   'LBL_ORG_NAME' => 'org name',
+  'LBL_FROM_DATE' => 'From Date',
+  'LBL_TO_DATE' => 'To Date',
 );
 ?>

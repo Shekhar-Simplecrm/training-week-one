@@ -46,13 +46,19 @@ $dictionary['scrm_work_experience']['fields']['currency_id']['inline_edit']=1;
 
  
 
+ // created: 2020-12-23 13:34:02
+$dictionary['scrm_work_experience']['fields']['from_date_c']['inline_edit']='';
+$dictionary['scrm_work_experience']['fields']['from_date_c']['labelValue']='From Date';
+
+ 
+
  // created: 2020-12-17 07:47:41
 $dictionary['scrm_work_experience']['fields']['gross_salary_c']['inline_edit']='';
 $dictionary['scrm_work_experience']['fields']['gross_salary_c']['labelValue']='Gross Salary';
 
  
 
- // created: 2020-12-23 09:25:04
+ // created: 2020-12-24 07:21:10
 $dictionary['scrm_work_experience']['fields']['organization_name_c']['inline_edit']='';
 $dictionary['scrm_work_experience']['fields']['organization_name_c']['labelValue']='Organization Name';
 
@@ -66,6 +72,17 @@ $dictionary['scrm_work_experience']['fields']['position_c']['labelValue']='Posit
 
  // created: 2020-12-23 09:25:04
 $dictionary['scrm_work_experience']['fields']['scrm_employee_id_c']['inline_edit']=1;
+
+ 
+
+ // created: 2020-12-24 07:21:10
+$dictionary['scrm_work_experience']['fields']['scrm_work_experience_id_c']['inline_edit']=1;
+
+ 
+
+ // created: 2020-12-23 13:36:25
+$dictionary['scrm_work_experience']['fields']['to_date_c']['inline_edit']='';
+$dictionary['scrm_work_experience']['fields']['to_date_c']['labelValue']='To Date';
 
  
 

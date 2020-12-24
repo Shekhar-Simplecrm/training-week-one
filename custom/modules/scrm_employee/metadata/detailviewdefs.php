@@ -87,24 +87,44 @@ array (
         array (
           0 => 
           array (
-            'name' => 'date_of_joining_c',
-            'label' => 'LBL_DATE_OF_JOINING',
+            'name' => 'age_c',
+            'label' => 'LBL_AGE',
           ),
           1 => 
           array (
-            'name' => 'status_c',
-            'studio' => 'visible',
-            'label' => 'LBL_STATUS',
+            'name' => 'date_of_joining_c',
+            'label' => 'LBL_DATE_OF_JOINING',
           ),
         ),
         3 => 
         array (
           0 => 
           array (
+            'name' => 'status_c',
+            'studio' => 'visible',
+            'label' => 'LBL_STATUS',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'from_date_c',
+            'label' => 'LBL_FROM_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'to_date_c',
+            'label' => 'LBL_TO_DATE',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
             'name' => 'terminated_date_c',
             'label' => 'LBL_TERMINATED_DATE',
           ),
-          1 => '',
         ),
       ),
       'lbl_email_addresses' => 

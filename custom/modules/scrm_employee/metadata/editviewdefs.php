@@ -46,7 +46,7 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
-      'syncDetailEditViews' => true,
+      'syncDetailEditViews' => false,
     ),
     'panels' => 
     array (
@@ -97,6 +97,19 @@ array (
         array (
           0 => 
           array (
+            'name' => 'from_date_c',
+            'label' => 'LBL_FROM_DATE',
+          ),
+          1 => 
+          array (
+            'name' => 'to_date_c',
+            'label' => 'LBL_TO_DATE',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
             'name' => 'terminated_date_c',
             'label' => 'LBL_TERMINATED_DATE',
           ),
@@ -108,7 +121,8 @@ array (
         0 => 
         array (
           0 => 'email1',
-          1 => array(
+          1 => 
+          array (
             'name' => 'phone_mobile',
             'customCode' => '<div class="form-row">
                                 <div class="col-2">
@@ -120,9 +134,8 @@ array (
                                     <input type="text" class="form-control" name="phone_mobile" id="phone_mobile" value="{$fields.phone_mobile.value}">
                                     <div class="new-row"> </div>
                                 </div>
-                            </div>'
+                            </div>',
           ),
-
         ),
       ),
       'lbl_address_information' => 

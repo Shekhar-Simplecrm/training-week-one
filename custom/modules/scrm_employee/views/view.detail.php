@@ -47,12 +47,36 @@ require_once('include/MVC/View/views/view.detail.php');
 class scrm_employeeViewDetail extends ViewDetail {
 
     function display() {
-     //    echo "<pre>";
-    	// print_r($this->bean);
-    	// exit;
+     	
         $mobile1 = $this->bean->mobile_phone_1_c;
         
         parent::display(); 
+
+        echo $js = <<<END
+        <script>
+        	$(document).ready(function() {
+
+        		$('#from_date_c').closest('.detail-view-field').closest('.detail-view-row').hide();
+
+        		$('#terminated_date_c').closest('.detail-view-field').closest('.detail-view-row').hide();
+
+        		let status_val = $('#status_c').val();
+        		
+        		if(status_val == 'leave_of_absense') {
+        			$('#from_date_c').closest('.detail-view-field').closest('.detail-view-row').show();
+        		}
+
+        		if(status_val == 'terminated'){
+        			$('#terminated_date_c').closest('.detail-view-field').closest('.detail-view-row').show();
+        		}
+
+        		$('#organization_name_c').on("change, input, keyup, click, focusin, focusout", function() {
+        			alert("Hello");
+        		});
+        		
+        	});
+        </script>
+        END;
     }
 
 }

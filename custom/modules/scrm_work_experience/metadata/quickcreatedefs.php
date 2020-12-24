@@ -54,8 +54,9 @@ array (
         array (
           0 => 
           array (
-            'name' => 'scrm_employee_scrm_work_experience_1_name',
-            'label' => 'LBL_SCRM_EMPLOYEE_SCRM_WORK_EXPERIENCE_1_FROM_SCRM_EMPLOYEE_TITLE',
+            'name' => 'organization_name_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ORGANIZATION_NAME',
           ),
           1 => 
           array (

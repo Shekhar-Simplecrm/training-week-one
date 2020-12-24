@@ -1,5 +1,5 @@
 <?php
-// created: 2020-12-23 09:31:07
+// created: 2020-12-23 13:48:14
 $mod_strings = array (
   'LBL_DATE_OF_BIRTH' => 'Date of Birth',
   'LBL_AGE' => 'Age',
@@ -28,4 +28,6 @@ $mod_strings = array (
   'LBL_MOBILE_PHONE_5' => 'mobile phone 5',
   'LBL_ORG_NAME_ACCOUNT_ID' => 'org name (related Organization ID)',
   'LBL_ORG_NAME' => 'org name',
+  'LBL_FROM_DATE' => 'From Date',
+  'LBL_TO_DATE' => 'To Date',
 );

@@ -106,6 +106,12 @@ $dictionary['scrm_employee']['fields']['first_name']['unified_search']=false;
 
  
 
+ // created: 2020-12-23 13:46:41
+$dictionary['scrm_employee']['fields']['from_date_c']['inline_edit']='';
+$dictionary['scrm_employee']['fields']['from_date_c']['labelValue']='From Date';
+
+ 
+
  // created: 2020-12-22 07:34:08
 $dictionary['scrm_employee']['fields']['lawful_basis']['default']='^^';
 $dictionary['scrm_employee']['fields']['lawful_basis']['massupdate']=0;
@@ -182,6 +188,12 @@ $dictionary['scrm_employee']['fields']['status_c']['labelValue']='Status';
  // created: 2020-12-21 10:24:44
 $dictionary['scrm_employee']['fields']['terminated_date_c']['inline_edit']='';
 $dictionary['scrm_employee']['fields']['terminated_date_c']['labelValue']='Terminated Date';
+
+ 
+
+ // created: 2020-12-23 13:48:14
+$dictionary['scrm_employee']['fields']['to_date_c']['inline_edit']='';
+$dictionary['scrm_employee']['fields']['to_date_c']['labelValue']='To Date';
 
  
 ?>

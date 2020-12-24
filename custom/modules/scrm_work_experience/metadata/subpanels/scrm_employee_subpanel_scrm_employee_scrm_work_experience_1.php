@@ -1,6 +1,22 @@
 <?php
-// created: 2020-12-23 09:13:23
+// created: 2020-12-24 08:16:56
 $subpanel_layout['list_fields'] = array (
+  'remove_button' => 
+  array (
+    'vname' => 'LBL_REMOVE',
+    'widget_class' => 'SubPanelRemoveButton',
+    'module' => 'scrm_work_experience',
+    'width' => '5%',
+    'default' => true,
+  ),
+  'edit_button' => 
+  array (
+    'vname' => 'LBL_EDIT_BUTTON',
+    'widget_class' => 'SubPanelEditButton',
+    'module' => 'scrm_work_experience',
+    'width' => '4%',
+    'default' => true,
+  ),
   'organization_name_c' => 
   array (
     'type' => 'relate',
@@ -11,8 +27,8 @@ $subpanel_layout['list_fields'] = array (
     'link' => true,
     'width' => '10%',
     'widget_class' => 'SubPanelDetailViewLink',
-    'target_module' => 'scrm_employee',
-    'target_record_key' => 'scrm_employee_id_c',
+    'target_module' => 'scrm_work_experience',
+    'target_record_key' => 'scrm_work_experience_id_c',
   ),
   'name' => 
   array (
@@ -41,21 +57,5 @@ $subpanel_layout['list_fields'] = array (
     'default' => true,
     'vname' => 'LBL_YEAR_OF_EXPERIENCE',
     'width' => '10%',
-  ),
-  'edit_button' => 
-  array (
-    'vname' => 'LBL_EDIT_BUTTON',
-    'widget_class' => 'SubPanelEditButton',
-    'module' => 'scrm_work_experience',
-    'width' => '4%',
-    'default' => true,
-  ),
-  'remove_button' => 
-  array (
-    'vname' => 'LBL_REMOVE',
-    'widget_class' => 'SubPanelRemoveButton',
-    'module' => 'scrm_work_experience',
-    'width' => '5%',
-    'default' => true,
   ),
 );

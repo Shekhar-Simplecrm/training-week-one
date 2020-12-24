@@ -63,19 +63,46 @@ class scrm_employeeViewEdit extends ViewEdit {
         	
         	$(document).ready(function() {
 
-        		$('#terminated_date_c').prop('disabled', true);
-        		$('#terminated_date_c_trigger').prop('disabled', true);
+        		$('#from_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
 
-        		$('#status_c').on('change', function(){
+        		$('#to_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+
+        		$('#terminated_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+
+        		$('#status_c').on('change', function() {
+
         			let val = $(this).val();
         			 
-        			if(val == 'terminated'){
-        				$('#terminated_date_c').removeAttr('disabled');
-        				$('#terminated_date_c_trigger').removeAttr('disabled');
+        			if(val == 'terminated') {
+
+        				$('#from_date_c').val('');
+        				$('#to_date_c').val('');
+
+        				$('#from_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+        				$('#to_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+
+        				$('#terminated_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'block');
+
         				$('#terminated_date_c').val('$today_date');
-        			}else{
-        				$('#terminated_date_c').prop('disabled', true);
-        				$('#terminated_date_c_trigger').prop('disabled', true);
+
+        			}else if(val == 'leave_of_absense') {
+
+        				$('#from_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'block');
+        				$('#to_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'block');
+
+        				$('#terminated_date_c').val('');
+
+        				$('#terminated_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+
+        			} else {
+        				$('#from_date_c').val('');
+        				$('#to_date_c').val('');
+
+        				$('#from_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+        				$('#to_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
+        				$('#terminated_date_c').val('');
+
+        				$('#terminated_date_c').closest('.dateTime').closest('.edit-view-row-item').css('display', 'none');
         			}
         			
         		});
@@ -90,7 +117,7 @@ class scrm_employeeViewEdit extends ViewEdit {
         			remove_click = 0;
         			if(click_count <= 5) {
 
-        				let html = '<div class="mt-3" id="inputFormRow"><div class="input-group mb-3"><input type="text" size="25" maxlength="25" id="mobile_phone_'+click_count+'_c" name="mobile_phone_'+click_count+'_c" class="form-control" value="'+mobile_number+'" autocomplete="off"><button type="button" id="mobile_phone_'+click_count+'_c" class="ml-2 btn btn-danger btn-sm mobile-phone-remove-button custom-btn" title="Remove Mobile Phone" tabindex="0" enabled="true" onclick="removeField($(this));" module="scrm_employee"><span class="fas fa-minus"></span></button></div></div>';
+        				let html = '<div class="mt-3" id="inputFormRow"><div class="input-group mb-3"><input type="text" size="25" maxlength="25" id="mobile_phone_'+click_count+'_c" name="mobile_phone_'+click_count+'_c" class="form-control" value="'+mobile_number+'" autocomplete="off"><button type="button" data-id="mobile_phone_'+click_count+'_c" class="ml-2 btn btn-danger btn-sm mobile-phone-remove-button custom-btn" title="Remove Mobile Phone" tabindex="0" enabled="true" onclick="removeField($(this));" module="scrm_employee"><span class="fas fa-minus"></span></button></div></div>';
         				$('.new-row').append(html);	
         				
         			}
@@ -98,9 +125,9 @@ class scrm_employeeViewEdit extends ViewEdit {
 
         	
         	function removeField(selectedField) {
-        		let current_field_id = selectedField.attr('id');
+        		let current_field_id = selectedField.data('id');
         		remove_click++;
-
+        		// $('#'+current_field_id).val('');
         		if(remove_click == 5) {
         			click_count = 0;
         		}else if(click_count >= 6){
@@ -108,6 +135,7 @@ class scrm_employeeViewEdit extends ViewEdit {
         		}else{
         			click_count = click_count - 1;
         		}
+        		// $('#'+current_field_id).closest("#inputFormRow").remove();
         		removeFieldAjax(current_field_id);
 
         	}
